@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Accommodation — NE Connect</title>
+  <meta name="description" content="Find safe, affordable PGs, hostels and flats near your workplace in Guwahati and north-east India. Verified listings on NE Connect."/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/components.css"/>
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <div class="navbar-inner">
+      <a href="index.html" class="logo"><div class="logo-mark"><img src="images/logo.png" alt="NE Connect"/></div><span>NE<span class="accent-text">Connect</span></span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="jobs.html" class="nav-link">Find Jobs</a></li>
+        <li><a href="accommodation.html" class="nav-link active">Accommodation</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="navbar-actions">
+        <a href="contact.html" class="btn btn-primary hide-mobile">List a Room</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-orb"></div>
+  <div class="container">
+    <div class="hero-badge" style="margin-bottom:16px">
+      <div class="hero-badge-dot"></div>
+      200+ Verified Listings
+    </div>
+    <h1>Find Safe & Affordable <span class="gradient-text">Accommodation</span></h1>
+    <div class="divider"></div>
+    <p>PGs, hostels, and furnished flats verified by our team — located near top employers and institutions in north-east India.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <!-- Filters -->
+    <div class="search-filter-bar">
+      <div class="search-input-wrap">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input class="search-input" type="text" id="accSearch" placeholder="Search by name or area…"/>
+      </div>
+      <select class="filter-select" id="accCity">
+        <option value="">All Cities</option>
+        <option value="Guwahati">Guwahati</option>
+        <option value="Dibrugarh">Dibrugarh</option>
+        <option value="Silchar">Silchar</option>
+      </select>
+      <select class="filter-select" id="accType">
+        <option value="">All Types</option>
+        <option value="PG">PG</option>
+        <option value="Hostel">Hostel</option>
+        <option value="Apartment">Apartment</option>
+      </select>
+      <select class="filter-select" id="accGender">
+        <option value="">Any Gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Any">Co-ed / Any</option>
+      </select>
+      <select class="filter-select" id="accPrice">
+        <option value="">Any Budget</option>
+        <option value="5000">Under ₹5,000/mo</option>
+        <option value="8000">Under ₹8,000/mo</option>
+        <option value="12000">Under ₹12,000/mo</option>
+        <option value="20000">Under ₹20,000/mo</option>
+      </select>
+      <button class="filter-btn" id="accFilterBtn">Filter</button>
+    </div>
+
+    <div class="results-info">
+      <p class="results-count"><strong id="accCount">17</strong> accommodations found</p>
+      <p style="font-size:.85rem;color:var(--text-subtle)">All listings verified by NE Connect</p>
+    </div>
+
+    <div class="cards-grid" id="accGrid">
+      <div style="color:var(--text-muted);padding:40px;text-align:center;grid-column:1/-1">Loading listings…</div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Trust Us -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <h2>Why <span class="gradient-text">Trust Our Listings?</span></h2>
+      <div class="divider divider-center"></div>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card reveal">
+        <div class="step-icon"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div>
+        <h3>Verified Properties</h3>
+        <p>Every listing is physically inspected and verified by the NE Connect team before going live.</p>
+      </div>
+      <div class="step-card reveal" style="transition-delay:.1s">
+        <div class="step-icon"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+        <h3>Safety First</h3>
+        <p>All properties must meet basic safety standards — CCTV, secure locks, and emergency contacts.</p>
+      </div>
+      <div class="step-card reveal" style="transition-delay:.2s">
+        <div class="step-icon"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <h3>Near Your Workplace</h3>
+        <p>We specifically curate accommodation located close to major offices, colleges, and hospitals.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section-sm">
+  <div class="container">
+    <div class="cta-banner reveal">
+      <h2>Have a Room or PG to <span class="gradient-text">List?</span></h2>
+      <p>Reach hundreds of verified job seekers relocating to your city. Listing is completely free.</p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-primary btn-lg">List Your Property</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><div class="logo-mark"><img src="images/logo.png" alt="NE Connect"/></div><span>NE<span class="accent-text">Connect</span></span></a>
+        <p>Empowering north-east India's workforce — one job and one home at a time.</p>
+        <div class="social-links">
+          <a href="#" class="social-link">f</a><a href="#" class="social-link">ig</a>
+          <a href="#" class="social-link">in</a><a href="#" class="social-link">tw</a>
+        </div>
+      </div>
+      <div class="footer-links"><h4>Quick Links</h4><ul>
+        <li><a href="index.html">Home</a></li><li><a href="jobs.html">Find Jobs</a></li>
+        <li><a href="accommodation.html">Accommodation</a></li><li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul></div>
+      <div class="footer-links"><h4>Accommodation</h4><ul>
+        <li><a href="accommodation.html">PG Rooms</a></li><li><a href="accommodation.html">Hostels</a></li>
+        <li><a href="accommodation.html">Furnished Flats</a></li><li><a href="contact.html">List a Room</a></li>
+      </ul></div>
+      <div class="footer-newsletter"><h4>Accommodation Alerts</h4><p>Get notified of new listings near you.</p>
+        <form class="newsletter-form"><input type="email" placeholder="Your email" required/><button type="submit">Go</button></form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 NE Connect. All rights reserved.</p>
+      <p>Made with ❤️ for North-East India</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
+
+
